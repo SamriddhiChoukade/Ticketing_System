@@ -6,7 +6,7 @@ function Projects() {
 
   useEffect(() => {
     async function loadProjects() {
-      const response = await fetch("http://localhost:5000/api/projects");
+      const response = await fetch("https://ticketing-system-lwpw.onrender.com/api/projects");
       const data = await response.json();
 
       setProjects(data);

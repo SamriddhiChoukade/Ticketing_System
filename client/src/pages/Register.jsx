@@ -12,7 +12,7 @@ function Register() {
     event.preventDefault();
 
     const response = await fetch(
-      "http://localhost:5000/api/users/register",
+      "https://ticketing-system-lwpw.onrender.com/api/users/register",
       {
         method: "POST",
         headers: {

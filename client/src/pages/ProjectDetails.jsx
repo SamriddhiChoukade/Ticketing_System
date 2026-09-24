@@ -10,7 +10,7 @@ function ProjectDetails() {
   useEffect(() => {
     async function loadProject() {
       const response = await fetch(
-        `http://localhost:5000/api/projects/${projectId}`
+        `https://ticketing-system-lwpw.onrender.com/api/projects/${projectId}`
       );
 
       if (!response.ok) {
@@ -28,7 +28,7 @@ function ProjectDetails() {
   useEffect(() => {
     async function loadTickets() {
       const response = await fetch(
-        `http://localhost:5000/api/tickets/project/${projectId}`
+        `https://ticketing-system-lwpw.onrender.com/api/tickets/project/${projectId}`
       );
 
       const data = await response.json();

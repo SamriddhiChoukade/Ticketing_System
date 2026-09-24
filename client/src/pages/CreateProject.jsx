@@ -14,7 +14,7 @@ function CreateProject() {
             return;
         }
 
-        const response = await fetch("http://localhost:5000/api/projects", {
+        const response = await fetch("https://ticketing-system-lwpw.onrender.com/api/projects", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

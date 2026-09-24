@@ -12,7 +12,7 @@ function TicketDetails() {
   useEffect(() => {
     async function loadTicket() {
       const response = await fetch(
-        `http://localhost:5000/api/tickets/${ticketId}`
+        `https://ticketing-system-lwpw.onrender.com/api/tickets/${ticketId}`
       );
 
       if (!response.ok) {

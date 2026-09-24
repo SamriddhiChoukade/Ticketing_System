@@ -7,7 +7,7 @@ function Tickets() {
     useEffect(() => {
         async function loadTickets() {
             const response = await fetch(
-                "http://localhost:5000/api/tickets"
+                "https://ticketing-system-lwpw.onrender.com/api/tickets"
             );
 
             const data = await response.json();

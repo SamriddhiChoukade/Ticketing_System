@@ -8,11 +8,11 @@ function Dashboard() {
   useEffect(() => {
     async function loadData() {
       const projectsResponse = await fetch(
-        "http://localhost:5000/api/projects"
+        "https://ticketing-system-lwpw.onrender.com/api/projects"
       );
 
       const ticketsResponse = await fetch(
-        "http://localhost:5000/api/tickets"
+        "https://ticketing-system-lwpw.onrender.com/api/tickets"
       );
 
       const projectsData = await projectsResponse.json();

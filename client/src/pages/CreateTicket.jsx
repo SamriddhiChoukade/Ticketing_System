@@ -17,7 +17,7 @@ function CreateTicket() {
     useEffect(() => {
         async function loadProjects() {
             const response = await fetch(
-                "http://localhost:5000/api/projects"
+                "https://ticketing-system-lwpw.onrender.com/api/projects"
             );
 
             const data = await response.json();
@@ -38,7 +38,7 @@ function CreateTicket() {
         }
 
         const response = await fetch(
-            "http://localhost:5000/api/tickets",
+            "https://ticketing-system-lwpw.onrender.com/api/tickets",
             {
                 method: "POST",
                 headers: {
